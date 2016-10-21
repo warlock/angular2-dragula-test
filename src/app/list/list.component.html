@@ -1,0 +1,5 @@
+<app-filters (filter)="filter($event)"></app-filters>
+
+  <div *ngFor="let issue of issues" [dragula]='"bag-one"'>
+    <app-item [issue]=issue></app-item>
+  </div>
